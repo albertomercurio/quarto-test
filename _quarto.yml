@@ -2,6 +2,19 @@ project:
   type: book
   output-dir: _output
 
+# website:
+#   title: Quarto Test
+
+#   navbar:
+#     title: Quarto Test
+#     left:
+#       - href: index.qmd
+#         text: Home
+#       - href: introduction.qmd
+#         text: Introduction
+#       - href: some_notebook.qmd
+#         text: Some Notebook
+
 book:
   title: "Numerical Methods for Quantum Optics and Open Quantum Systems"
   author:

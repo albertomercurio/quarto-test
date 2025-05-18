@@ -1,17 +1,6 @@
----
-code-links: binder
----
-
 # Introduction
 
 Some text...
 
-```{python}
-import numpy as np
-
-# Vectorized array operations
-x = np.linspace(0, 10, 20)
-y = np.sin(x) + 0.5 * x**2
-print(y[:5])  # show first five results
-```
+{{< embed some_notebook.qmd#some_code echo=true >}}
 
