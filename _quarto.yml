@@ -27,19 +27,7 @@ book:
 # default format for all files
 format:
   html:
-    theme:
-      light: flatly
-      dark: darkly
-    highlight-style: atom-one
-    css: styles.css
     toc: true
-    published-title: Last Update
-    date-format: iso
-    code-line-numbers: true
-    colorlinks: true
-    footnotes-hover: true
-    fig-align: center
-    fig-responsive: true
 
 jupyter: python3
 
