@@ -14,7 +14,7 @@
     "href": "introduction.html",
     "title": "2  Introduction",
     "section": "",
-    "text": "Some text…\n\nimport numpy as np\n\n# Vectorized array operations\nx = np.linspace(0, 10, 20)\ny = np.sin(x) + 0.5 * x**2\nprint(y[:5])  # show first five results\n\n[0.         0.64085531 1.42274624 2.24650418 3.07660682]",
+    "text": "Some text…\n\n\nimport numpy as np\n\n# Vectorized array operations\nx = np.linspace(0, 10, 20)\ny = np.sin(x) + 0.5 * x**2\nprint(y[:5])  # show first five results\n\n[0.         0.64085531 1.42274624 2.24650418 3.07660682]",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
     ]
