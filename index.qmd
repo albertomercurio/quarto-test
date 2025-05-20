@@ -2,4 +2,15 @@
 title: Home Page
 ---
 
-*Numerical Methods for Quantum Optics and Open Quantum Systems* is a hands-on course that shows you how to model and simulate open quantum systems in quantum optics with Python and QuTiP. The notes mix concise explanations, essential equations, and runnable code cells that work both on your computer and in Google Colab. Everything lives in a Quarto project on GitHub and is published in HTML and PDF for easy reading and collaboration. By the end, you will be able to set up and explore standard problems—such as photon cavities, two-level atoms, and open-system dynamics—using tools you can reuse in research and projects.
+## From this notebook
+
+```{python}
+import os, matplotlib
+print("Quarto CWD:    ", os.getcwd())
+print("Loaded rc file:", matplotlib.matplotlib_fname())
+```
+
+## From an embedded notebook
+
+{{< embed /somefolder/somefile.qmd#my-label echo=true >}}
+

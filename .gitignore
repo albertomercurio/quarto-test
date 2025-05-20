@@ -199,6 +199,7 @@ deps/src/
 /_freeze/
 /_site/
 /_output/
+/_book/
 *.html
 *.gif
 *.json

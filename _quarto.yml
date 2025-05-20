@@ -1,25 +1,13 @@
 project:
   type: book
-  output-dir: _output
-
-# website:
-#   title: Quarto Test
-#   navbar:
-#     title: Quarto Test
-#     left:
-#       - href: index.qmd
-#         text: Home
-#       - href: introduction.qmd
-#         text: Introduction
+  execute-dir: project
 
 book:
   title: "Numerical Methods for Quantum Optics and Open Quantum Systems"
   author:
     - name: Alberto Mercurio
-    - name: Daniele De Bernardis
   chapters:
     - index.qmd
-    - introduction.qmd
 
 # default format for all files
 format:
