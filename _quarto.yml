@@ -1,17 +1,21 @@
 project:
   type: book
-  execute-dir: project
 
 book:
   title: "Numerical Methods for Quantum Optics and Open Quantum Systems"
   author:
     - name: Alberto Mercurio
+  date: today
+  downloads: [pdf]
   chapters:
     - index.qmd
 
 # default format for all files
 format:
   html:
+    toc: true
+  pdf:
+    documentclass: scrreprt
     toc: true
 
 jupyter: python3

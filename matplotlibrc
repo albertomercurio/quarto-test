@@ -1,7 +1,0 @@
-figure.figsize: 6.122, 3.784
-lines.linewidth: 1.4
-text.usetex: True
-text.latex.preamble: 
-    \usepackage{amsmath}
-    \usepackage{amssymb}
-    \usepackage{physics}
