@@ -200,6 +200,8 @@ deps/src/
 /_site/
 /_output/
 /_book/
+/index_files/
+*.embed_files/
 *.html
 *.gif
 *.json

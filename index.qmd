@@ -1,5 +1,8 @@
 ---
 title: Home Page
+format:
+    html: default
+    pdf: default
 ---
 
 ## From this notebook
@@ -14,5 +17,5 @@ plt.show()
 
 ## From an embedded notebook
 
-{{< embed /somefolder/somefile.qmd#my-label echo=true >}}
+{{< embed somefolder/somefile.qmd#my-label echo=true >}}
 
