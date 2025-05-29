@@ -206,6 +206,7 @@ deps/src/
 *.gif
 *.json
 /site_libs/
+_tmp_fig.svg
 
 # Files generated from Binder
 .TinyTeX

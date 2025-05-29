@@ -5,17 +5,11 @@ format:
     pdf: default
 ---
 
-## From this notebook
-
-```{python}
-import matplotlib.pyplot as plt
-
-plt.plot([1, 2, 3], [4, 5, 6], label="A line")
-plt.legend()
-plt.show()
-```
-
 ## From an embedded notebook
 
-{{< embed somefolder/somefile.qmd#my-label echo=true >}}
+{{< embed somefolder/somefile.qmd#plot-phase-space-density echo=true >}}
+
+## Still from an embedded notebook
+
+{{< embed somefolder/somefile.qmd#plot-final-density echo=true >}}
 

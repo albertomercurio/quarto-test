@@ -1,11 +1,65 @@
 # Some File
 
+```{python}
+#| label: import-libraries
+
+import numpy as np
+import matplotlib.pyplot as plt
+from IPython.display import SVG
+```
+
+Some text...
 
 ```{python}
-#| label: my-label
-import matplotlib.pyplot as plt
+#| label: plot-phase-space-density
 
-plt.plot([1, 2, 3], [4, 5, 6], label="A line")
-plt.legend()
+from IPython.display import HTML
+from matplotlib.animation import FuncAnimation
+
+N_x = 101
+N_px = 101
+
+x_list = np.linspace(-2, 2, N_x)
+px_list = np.linspace(-2, 2, N_px)
+t_list = np.linspace(0, 2, 50000)
+
+rho_t = np.random.rand(N_x * N_px)
+
+plt.rcParams.update({'font.size': 8})
+fig, ax = plt.subplots(figsize=(4.6, 2.8))
+
+fig.suptitle(r'Phase space density $\rho(x, p, t)$ evolution')
+
+img = ax.pcolormesh(x_list, px_list, rho_t.reshape(N_x, N_px)**2, shading='gouraud', rasterized=True)
+ax.set_xlabel('Position $x$')
+ax.set_ylabel('Momentum $p_x$')
+
 plt.show()
 ```
+
+Or can visualize the final phase space density $\rho(x, p, t)$ as a 2D plot:
+
+```{python}
+plt.rcParams.update({'font.size': 12})
+```
+
+```{python}
+#| label: plot-final-density
+
+# fig, ax = plt.subplots()
+
+# fig.suptitle(r'Phase space density $\rho(x, p, t)$ evolution')
+
+# img = ax.pcolormesh(x_list, px_list, rho_t[-1].reshape(N_x, N_px)**2, shading='gouraud', rasterized=True)
+# ax.set_xlabel('Position $x$')
+# ax.set_ylabel('Momentum $p_x$')
+
+# # Show in Quarto
+# plt.savefig('_tmp_fig.svg')
+# plt.close(fig)
+# SVG(filename='_tmp_fig.svg')
+
+prova = 2
+prova**2
+```
+
