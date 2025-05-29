@@ -46,20 +46,14 @@ plt.rcParams.update({'font.size': 12})
 ```{python}
 #| label: plot-final-density
 
-# fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(4.6, 2.8))
 
-# fig.suptitle(r'Phase space density $\rho(x, p, t)$ evolution')
+fig.suptitle(r'Phase space density $\rho(x, p, t)$ evolution')
 
-# img = ax.pcolormesh(x_list, px_list, rho_t[-1].reshape(N_x, N_px)**2, shading='gouraud', rasterized=True)
-# ax.set_xlabel('Position $x$')
-# ax.set_ylabel('Momentum $p_x$')
+img = ax.pcolormesh(x_list, px_list, rho_t.reshape(N_x, N_px)**2, shading='gouraud', rasterized=True)
+ax.set_xlabel('Position $x$')
+ax.set_ylabel('Momentum $p_x$')
 
-# # Show in Quarto
-# plt.savefig('_tmp_fig.svg')
-# plt.close(fig)
-# SVG(filename='_tmp_fig.svg')
-
-prova = 2
-prova**2
+plt.show()
 ```
 
